@@ -43,11 +43,12 @@ p = 0
 correcta = ""
 respuesta = ""
 
+#preguntas y respuestas
+#pre_literatura = ["¿Quién escribió La Odisea?", "¿Quién es el autor de el Quijote?"]
+#co_literatura = ["homero", "migueldecervantes" ]
+
 #while para repetir el codigo
 while(opcion!=8):
-
-    
-
     #mostrar menu y pedir al usuario el tema deseado
     menu()
     opcion = float(input("\nSelecciona la opcion deseada: "))
@@ -58,9 +59,9 @@ while(opcion!=8):
         #determinar si la respuesta es correcta r=1
         #mandar r a calificacion
         print("Has seleccionado: LITERATURA\n")
-        print(preguntas)
-        respuesta = input("¿Quién escribió La Odisea?\n")
-        correcta = "homero"
+        print(preguntas+1, ".-")
+        respuesta = input("¿Quien escribio la odisea?\n")
+        correcta = 'homero'
         if(respuesta == correcta):
             print("Correcta!")
             r = 1
@@ -76,7 +77,7 @@ while(opcion!=8):
         #determinar si la respuesta es correcta r=1
         #mandar r a calificacion
         print("Has seleccionado: MATEMATICAS\n")
-        print(preguntas)
+        print(preguntas+1)
         respuesta = input("¿Nombre el único número primo par?\n")
         correcta = "dos"
         if(respuesta == correcta):
@@ -92,11 +93,11 @@ while(opcion!=8):
 
 resultado = promedio(calificacion, preguntas)
 
-if(resultado<70):
+if(resultado<7):
     print("\n Calificación: ", resultado)
     print("\nIntentalo nuevamente!")
 else:
-    if(resultado<90):
+    if(resultado<9):
         print("\n Calificación: ", resultado)
         print("\nBien hecho!")
     else:
