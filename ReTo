@@ -1,4 +1,3 @@
-
 #Funcion que imprime el menu
 def menu():
     print("         -MENU-\n")
@@ -18,16 +17,16 @@ def calificar(r, calificacion):
             calificacion += 10
         #la pregunta tendrá dos respuestas
         #aqui ve si se respondieron las dos bien
-        if(p == 2):
+        elif(p == 2):
             calificaion += 7.5
-        if(p == 22):
+        elif(p == 22):
             calificacion += 15
         #para el caso de 3 respuestas
-        if(p == 3):
+        elif(p == 3):
             calificacion += 7
-        if(p == 33):
+        elif(p == 33):
             calificacion += 14
-        if(p == 333):
+        elif(p == 333):
             calificacion += 20
     return calificacion
 
@@ -96,10 +95,9 @@ resultado = promedio(calificacion, preguntas)
 if(resultado<7):
     print("\n Calificación: ", resultado)
     print("\nIntentalo nuevamente!")
+elif(resultado<9):
+    print("\n Calificación: ", resultado)
+    print("\nBien hecho!")
 else:
-    if(resultado<9):
-        print("\n Calificación: ", resultado)
-        print("\nBien hecho!")
-    else:
-        print("\n Calificación: ", resultado)
-        print("\nFelicidades, lo conseguiste!")
+    print("\n Calificación: ", resultado)
+    print("\nFelicidades, lo conseguiste!")
