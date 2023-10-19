@@ -16,7 +16,7 @@ Mientras no se seleccione la opcion 8:
    2.1 Espera la respuesta del usuario
 3. Verifica si la respuesta a la pregunta es válida y mostrar en pantalla si es correcta o incorrecta. 
 4. De acuerdo a la respuesta, le da un valor a la variable valida.
-5. La variable r se manda a la función calificación la cual determina los puntos que se obtuvieron.
+5. La variable valida se manda a la función calificación la cual determina los puntos que se obtuvieron.
 6. Suma los puntos a la calificación.
 7. Pregunta +1
 
