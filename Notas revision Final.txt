@@ -1,0 +1,4 @@
+Notas revision Final
+Podria volverme a revisar los avances 2, 3, 4 y 6.
+Faltan de revisar porque no tenia el archivo en .py
+
